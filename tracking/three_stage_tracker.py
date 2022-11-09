@@ -2,7 +2,7 @@ import platform
 import time
 import numpy as np
 import scipy.sparse
-from tensorpack import PredictConfig, get_model_loader, OfflinePredictor
+from tensorpack.tensorpack import PredictConfig, get_model_loader, OfflinePredictor
 from SiamRCNN.config import config as cfg
 
 from SiamRCNN.tracking.argmax_tracker import PrecomputingReferenceTracker
