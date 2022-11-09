@@ -2,13 +2,13 @@
 
 import tensorflow as tf
 
-from tensorpack.models import Conv2D, layer_register
-from tensorpack.tfutils.argscope import argscope
-from tensorpack.tfutils.scope_utils import auto_reuse_variable_scope, under_name_scope
-from tensorpack.tfutils.summary import add_moving_summary
+from tensorpack.tensorpack.models import Conv2D, layer_register
+from tensorpack.tensorpack.tfutils.argscope import argscope
+from tensorpack.tensorpack.tfutils.scope_utils import auto_reuse_variable_scope, under_name_scope
+from tensorpack.tensorpack.tfutils.summary import add_moving_summary
 
-from config import config as cfg
-from model_box import clip_boxes
+from SiamRCNN.config import config as cfg
+from SiamRCNN.model_box import clip_boxes
 
 
 @layer_register(log_shape=True)
