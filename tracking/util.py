@@ -1,7 +1,7 @@
 import numpy as np
 import PIL.Image
 
-from examples.FasterRCNN.common import clip_boxes
+from SiamRCNN.common import clip_boxes
 
 
 def xyxy_to_cxcywh_np(boxes_xyxy):
