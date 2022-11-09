@@ -2,14 +2,14 @@
 
 import tensorflow as tf
 
-from tensorpack.models import Conv2D, Conv2DTranspose, layer_register
-from tensorpack.tfutils.argscope import argscope
-from tensorpack.tfutils.common import get_tf_version_tuple
-from tensorpack.tfutils.scope_utils import under_name_scope
-from tensorpack.tfutils.summary import add_moving_summary
+from tensorpack.tensorpack.models import Conv2D, Conv2DTranspose, layer_register
+from tensorpack.tensorpack.tfutils.argscope import argscope
+from tensorpack.tensorpack.tfutils.common import get_tf_version_tuple
+from tensorpack.tensorpack.tfutils.scope_utils import under_name_scope
+from tensorpack.tensorpack.tfutils.summary import add_moving_summary
 
-from basemodel import GroupNorm
-from config import config as cfg
+from SiamRCNN.basemodel import GroupNorm
+from SiamRCNN.config import config as cfg
 
 
 @under_name_scope()
