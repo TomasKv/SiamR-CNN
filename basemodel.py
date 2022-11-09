@@ -5,12 +5,12 @@ import numpy as np
 from contextlib import ExitStack, contextmanager
 import tensorflow as tf
 
-from tensorpack.models import BatchNorm, Conv2D, MaxPooling, layer_register
-from tensorpack.tfutils import argscope
-from tensorpack.tfutils.scope_utils import auto_reuse_variable_scope
-from tensorpack.tfutils.varreplace import custom_getter_scope, freeze_variables
+from tensorpack.tensorpack.models import BatchNorm, Conv2D, MaxPooling, layer_register
+from tensorpack.tensorpack.tfutils import argscope
+from tensorpack.tensorpack.tfutils.scope_utils import auto_reuse_variable_scope
+from tensorpack.tensorpack.tfutils.varreplace import custom_getter_scope, freeze_variables
 
-from config import config as cfg
+from SiamRCNN.config import config as cfg
 
 
 @layer_register(log_shape=True)
