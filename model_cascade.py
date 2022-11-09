@@ -1,12 +1,12 @@
 import tensorflow as tf
 
-from tensorpack.tfutils import get_current_tower_context
-from tensorpack.tfutils.summary import add_moving_summary
+from tensorpack.tensorpack.tfutils import get_current_tower_context
+from tensorpack.tensorpack.tfutils.summary import add_moving_summary
 
-from config import config as cfg
-from model_box import clip_boxes
-from model_frcnn import BoxProposals, FastRCNNHead, fastrcnn_outputs
-from utils.box_ops import pairwise_iou
+from SiamRCNN.config import config as cfg
+from SiamRCNN.model_box import clip_boxes
+from SiamRCNN.model_frcnn import BoxProposals, FastRCNNHead, fastrcnn_outputs
+from SiamRCNN.utils.box_ops import pairwise_iou
 
 
 class CascadeRCNNHead(object):
