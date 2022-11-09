@@ -5,7 +5,7 @@ import sys
 import cv2
 import PIL
 import numpy as np
-import vot_helper
+import SiamRCNN.vot_helper
 
 
 class SiamRCNN:
