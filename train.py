@@ -14,12 +14,12 @@ assert six.PY3, "FasterRCNN requires Python 3!"
 import tensorflow as tf
 import tqdm
 
-import tensorpack.utils.viz as tpviz
-from tensorpack import *
-from tensorpack.tfutils import optimizer
-from tensorpack.tfutils.common import get_tf_version_tuple, get_tensors_by_names
-from tensorpack.tfutils.summary import add_moving_summary
-from tensorpack.tfutils.varreplace import freeze_variables
+import tensorpack.tensorpack.utils.viz as tpviz
+from tensorpack.tensorpack import *
+from tensorpack.tensorpack.tfutils import optimizer
+from tensorpack.tensorpack.tfutils.common import get_tf_version_tuple, get_tensors_by_names
+from tensorpack.tensorpack.tfutils.summary import add_moving_summary
+from tensorpack.tensorpack.tfutils.varreplace import freeze_variables
 
 import model_frcnn
 import model_mrcnn
