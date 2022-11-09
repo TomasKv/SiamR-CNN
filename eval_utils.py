@@ -18,10 +18,10 @@ import tqdm
 import tensorflow as tf
 import xmltodict
 
-from tensorpack.callbacks import Callback
-from tensorpack.tfutils.common import get_tf_version_tuple
-from tensorpack.utils import logger
-from tensorpack.utils.utils import get_tqdm
+from tensorpack.tensorpack.callbacks import Callback
+from tensorpack.tensorpack.tfutils.common import get_tf_version_tuple
+from tensorpack.tensorpack.utils import logger
+from tensorpack.tensorpack.utils.utils import get_tqdm
 
 from common import CustomResize, clip_boxes, box_to_point8, point8_to_box
 from data import get_eval_dataflow
