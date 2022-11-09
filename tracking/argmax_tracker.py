@@ -5,8 +5,8 @@ from got10ktoolkit.got10k.trackers import Tracker
 from SiamRCNN.config import config as cfg, finalize_configs
 from tensorpack.tensorpack import PredictConfig, get_model_loader, OfflinePredictor, logger
 
-from train import ResNetFPNModel
-from common import CustomResize, box_to_point8, point8_to_box
+from SiamRCNN.train import ResNetFPNModel
+from SiamRCNN.common import CustomResize, box_to_point8, point8_to_box
 
 
 class PrecomputingReferenceTracker(Tracker):
