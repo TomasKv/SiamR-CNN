@@ -1,7 +1,7 @@
 import cv2
 import random
 import numpy as np
-from got10k.trackers import Tracker
+from got10ktoolkit.got10k.trackers import Tracker
 from config import config as cfg, finalize_configs
 from tensorpack import PredictConfig, get_model_loader, OfflinePredictor, logger
 
