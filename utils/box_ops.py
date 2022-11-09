@@ -3,7 +3,7 @@
 
 import tensorflow as tf
 
-from tensorpack.tfutils.scope_utils import under_name_scope
+from tensorpack.tensorpack.tfutils.scope_utils import under_name_scope
 
 
 """
