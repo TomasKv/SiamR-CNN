@@ -3,10 +3,10 @@ import time
 import numpy as np
 import scipy.sparse
 from tensorpack import PredictConfig, get_model_loader, OfflinePredictor
-from config import config as cfg
+from SiamRCNN.config import config as cfg
 
-from tracking.argmax_tracker import PrecomputingReferenceTracker
-from tracking.util import resize_and_clip_boxes, generate_colors, xyxy_to_cxcywh_np
+from SiamRCNN.tracking.argmax_tracker import PrecomputingReferenceTracker
+from SiamRCNN.tracking.util import resize_and_clip_boxes, generate_colors, xyxy_to_cxcywh_np
 
 VIZ_WITH_OPENCV = True
 
