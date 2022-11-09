@@ -2,11 +2,11 @@
 import argparse
 import os
 
-from got10k.experiments import ExperimentGOT10k, ExperimentVOT, ExperimentOTB, ExperimentUAV123, ExperimentLaSOT, ExperimentDAVIS, ExperimentYouTubeVOS, ExperimentTrackingNet, ExperimentOxuva, ExperimentNfS, ExperimentTColor128
-from got10k.experiments.custom import ExperimentCustom
+from got10ktoolkit.got10k.experiments import ExperimentGOT10k, ExperimentVOT, ExperimentOTB, ExperimentUAV123, ExperimentLaSOT, ExperimentDAVIS, ExperimentYouTubeVOS, ExperimentTrackingNet, ExperimentOxuva, ExperimentNfS, ExperimentTColor128
+from got10ktoolkit.got10k.experiments.custom import ExperimentCustom
 
-from tracking.argmax_tracker import ArgmaxTracker
-from tracking.three_stage_tracker import ThreeStageTracker
+from SiamRCNN.tracking.argmax_tracker import ArgmaxTracker
+from SiamRCNN.tracking.three_stage_tracker import ThreeStageTracker
 
 # change these data paths to where you have the datasets!
 DATASET_PREFIX = "/globalwork/data/"
