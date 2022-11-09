@@ -23,10 +23,10 @@ from tensorpack.tensorpack.tfutils.common import get_tf_version_tuple
 from tensorpack.tensorpack.utils import logger
 from tensorpack.tensorpack.utils.utils import get_tqdm
 
-from common import CustomResize, clip_boxes, box_to_point8, point8_to_box
-from data import get_eval_dataflow
-from dataset import DetectionDataset
-from config import config as cfg
+from SiamRCNN.common import CustomResize, clip_boxes, box_to_point8, point8_to_box
+from SiamRCNN.data import get_eval_dataflow
+from SiamRCNN.dataset import DetectionDataset
+from SiamRCNN.config import config as cfg
 
 try:
     import horovod.tensorflow as hvd
