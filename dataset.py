@@ -8,8 +8,8 @@ import tqdm
 import json
 import glob
 
-from tensorpack.utils import logger
-from tensorpack.utils.timer import timed_operation
+from tensorpack.tensorpack.utils import logger
+from tensorpack.tensorpack.utils.timer import timed_operation
 
 from config import config as cfg
 
