@@ -14,7 +14,7 @@ from tabulate import tabulate
 from termcolor import colored
 import xmltodict
 
-from tensorpack.dataflow import (
+from tensorpack.tensorpack.dataflow import (
     DataFromList, MapDataComponent, MultiProcessMapDataZMQ, MultiThreadMapData, MapData, TestDataSpeed, imgaug)
 from tensorpack.tensorpack.utils import logger
 from tensorpack.tensorpack.utils.argtools import log_once, memoized
