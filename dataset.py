@@ -11,7 +11,7 @@ import glob
 from tensorpack.tensorpack.utils import logger
 from tensorpack.tensorpack.utils.timer import timed_operation
 
-from config import config as cfg
+from SiamRCNN.config import config as cfg
 
 __all__ = ['COCODetection', 'DetectionDataset']
 
