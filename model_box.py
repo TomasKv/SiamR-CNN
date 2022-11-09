@@ -5,9 +5,9 @@ import numpy as np
 from collections import namedtuple
 import tensorflow as tf
 
-from tensorpack.tfutils.scope_utils import under_name_scope
+from tensorpack.tensorpack.tfutils.scope_utils import under_name_scope
 
-from config import config
+from SiamRCNN.config import config
 
 
 @under_name_scope()
