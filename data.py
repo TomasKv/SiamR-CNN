@@ -16,8 +16,8 @@ import xmltodict
 
 from tensorpack.dataflow import (
     DataFromList, MapDataComponent, MultiProcessMapDataZMQ, MultiThreadMapData, MapData, TestDataSpeed, imgaug)
-from tensorpack.utils import logger
-from tensorpack.utils.argtools import log_once, memoized
+from tensorpack.tensorpack.utils import logger
+from tensorpack.tensorpack.utils.argtools import log_once, memoized
 
 from common import (
     CustomResize, DataFromListOfDict, box_to_point8,
