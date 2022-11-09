@@ -4,8 +4,8 @@
 import numpy as np
 import cv2
 
-from tensorpack.dataflow import RNGDataFlow
-from tensorpack.dataflow.imgaug import transform
+from tensorpack.tensorpack.dataflow import RNGDataFlow
+from tensorpack.tensorpack.dataflow.imgaug import transform
 
 
 class DataFromListOfDict(RNGDataFlow):
