@@ -19,14 +19,14 @@ from tensorpack.dataflow import (
 from tensorpack.tensorpack.utils import logger
 from tensorpack.tensorpack.utils.argtools import log_once, memoized
 
-from common import (
+from SiamRCNN.common import (
     CustomResize, DataFromListOfDict, box_to_point8,
     filter_boxes_inside_shape, point8_to_box, segmentation_to_mask, np_iou)
-from config import config as cfg
-from dataset import DetectionDataset
-from hard_example_utils import subsample_nns
-from utils.generate_anchors import generate_anchors
-from utils.np_box_ops import area as np_area, ioa as np_ioa
+from SiamRCNN.config import config as cfg
+from SiamRCNN.dataset import DetectionDataset
+from SiamRCNN.hard_example_utils import subsample_nns
+from SiamRCNN.utils.generate_anchors import generate_anchors
+from SiamRCNN.utils.np_box_ops import area as np_area, ioa as np_ioa
 
 # import tensorpack.utils.viz as tpviz
 
