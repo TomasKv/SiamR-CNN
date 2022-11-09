@@ -21,19 +21,19 @@ from tensorpack.tensorpack.tfutils.common import get_tf_version_tuple, get_tenso
 from tensorpack.tensorpack.tfutils.summary import add_moving_summary
 from tensorpack.tensorpack.tfutils.varreplace import freeze_variables
 
-import model_frcnn
-import model_mrcnn
-from basemodel import image_preprocess, resnet_c4_backbone, resnet_conv5, resnet_fpn_backbone, backbone_scope
-from dataset import DetectionDataset
-from config import finalize_configs, config as cfg
-from data import get_all_anchors, get_all_anchors_fpn, get_train_dataflow
-from eval_utils import EvalCallback
-from model_box import RPNAnchors, clip_boxes, crop_and_resize, roi_align
-from model_cascade import CascadeRCNNHead, CascadeRCNNHeadWithHardExamples
-from model_fpn import fpn_model, generate_fpn_proposals, multilevel_roi_align, multilevel_rpn_losses
-from model_frcnn import BoxProposals, FastRCNNHead, fastrcnn_outputs, fastrcnn_predictions, sample_fast_rcnn_targets
-from model_mrcnn import maskrcnn_loss, maskrcnn_upXconv_head
-from model_rpn import generate_rpn_proposals, rpn_head, rpn_losses
+import SiamRCNN.model_frcnn
+import SiamRCNN.model_mrcnn
+from SiamRCNN.basemodel import image_preprocess, resnet_c4_backbone, resnet_conv5, resnet_fpn_backbone, backbone_scope
+from SiamRCNN.dataset import DetectionDataset
+from SiamRCNN.config import finalize_configs, config as cfg
+from SiamRCNN.data import get_all_anchors, get_all_anchors_fpn, get_train_dataflow
+from SiamRCNN.eval_utils import EvalCallback
+from SiamRCNN.model_box import RPNAnchors, clip_boxes, crop_and_resize, roi_align
+from SiamRCNN.model_cascade import CascadeRCNNHead, CascadeRCNNHeadWithHardExamples
+from SiamRCNN.model_fpn import fpn_model, generate_fpn_proposals, multilevel_roi_align, multilevel_rpn_losses
+from SiamRCNN.model_frcnn import BoxProposals, FastRCNNHead, fastrcnn_outputs, fastrcnn_predictions, sample_fast_rcnn_targets
+from SiamRCNN.model_mrcnn import maskrcnn_loss, maskrcnn_upXconv_head
+from SiamRCNN.model_rpn import generate_rpn_proposals, rpn_head, rpn_losses
 
 try:
     import horovod.tensorflow as hvd
