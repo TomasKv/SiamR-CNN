@@ -39,7 +39,7 @@ class PrecomputingReferenceTracker(Tracker):
                 load = model.replace("checkpoint:", "")
             else:
                 assert False, ("unknown model", model)
-            from dataset import DetectionDataset
+            from SiamRCNN.dataset import DetectionDataset
             # init tensorpack model
             # cfg.freeze(False)
             DetectionDataset()  # initialize the config with information from our dataset
@@ -80,7 +80,7 @@ class PrecomputingReferenceTracker(Tracker):
         return resized_img, res_boxes
 
     def _make_pred_func(self, load):
-        from train import ResNetFPNTrackModel
+        from SiamRCNN.train import ResNetFPNTrackModel
         pred_model = ResNetFPNTrackModel()
         predcfg = PredictConfig(
             model=pred_model,
@@ -130,7 +130,7 @@ class ArgmaxTracker(PrecomputingReferenceTracker):
         super().__init__("ArgmaxTracker")
 
     def _update(self, img):
-        from eval import predict_image_track_with_precomputed_ref_features
+        from SiamRCNN.eval import predict_image_track_with_precomputed_ref_features
         results = predict_image_track_with_precomputed_ref_features(img, self._ff_gt_feats, self._pred_func)
         det_boxes = np.array([r.box for r in results])
         det_scores = np.array([r.score for r in results])
